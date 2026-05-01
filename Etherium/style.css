@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--backgroung);
+
+}
+
+:root{
+    --header-background: #111;
+    --primary: #cccccc;
+    --secundary: #fff;
+    --tertiary: #333;
+    --quaternary: #111;
+    --backgroung: rgba(0,0,18);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background: var(--header-background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header .logo{
+    font-size: 36px;
+    color: var(--primary);
+    background: transparent;
+}
+
+header nav{
+    background: transparent;
+}
+
+header nav ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+    background: transparent;
+}
+
+header nav li{
+    background: transparent;
+}
+
+header nav a{
+    display: inline;
+    text-decoration: none;
+    color: var(--primary);
+    transition: all 0.3s ease;
+    padding: 15px;
+    border-radius: 5px;
+    background: transparent;
+}
+
+header nav a:hover{
+    color: var(--secundary);
+    background-color: var(--tertiary);
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px #333 0.5;
+}
+
+section.Destaques{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.Destaques img {
+    max-width: 100%;
+}
+
+section.Jogos{
+    width: 80%;
+    margin: 50px auto;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary);
+    
+}
+
+section.Jogos .itens-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+section.Jogos .item{
+    width: 300px;
+    height: 300px;
+    background-color: var(--primary);
+}
+
+.item img {
+    max-width: 100%;
+}
+
+section.Contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: var(--primary);
+}
+
+section.Contato .form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.Contato .form a:hover{
+    background-color: var(--tertiary);
+    color: var(--primary);
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px #333 0.5;
+}
+
+.form input, .form textarea{
+    border: 1px solid black;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    resize: none;
+}
+
+.form a{
+    text-decoration: none;
+    background-color: var(--quaternary);
+    color: var(--primary);
+    padding: 10px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: var(--header-background);
+    color: var(--primary);
+    align-items: center;
+    margin-top: 50px;
+}
+
+footer span{
+    background: transparent;
+}
